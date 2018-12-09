@@ -11,11 +11,12 @@ const borders = {
 const { borderRadius, borderSize } = borders
 
 const color = {
+  black: '#000000',
+  blueDodger: '#1A70E0',
+  grayDarkSlate: '#2D2D2D',
+  silver: '#B5B6B6',
   white: '#FFFFFF',
   whiteSnow: '#F9F9F9',
-  silver: '#B5B6B6',
-  grayDarkSlate: '#2D2D2D',
-  blueDodger: '#1A70E0',
 }
 
 const fonts = {
@@ -54,8 +55,10 @@ const globalStyles = () => {
   return {
     borderRadius,
     borderSize,
-    fontFamily,
     color,
+    fontSize,
+    fontFamily,
+    fontWeight,
     typography,
   }
 }
