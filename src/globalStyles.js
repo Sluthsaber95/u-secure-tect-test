@@ -43,13 +43,14 @@ const fonts = {
 const { fontFamily, fontSize, fontWeight } = fonts;
 const { hindGuntur } = fontFamily
 const { sm, md, lg, xl } = fontSize;
-const { regular, bold } = fontWeight
+const { light, regular, bold } = fontWeight
 const mainFont = `${hindGuntur}${fontBackup.helvetica}`
 
 const typography = {
   xlReg: `${regular} ${xl} ${mainFont}`,
   lgBold: `${bold} ${lg} ${mainFont}`,
   lgReg: `${regular} ${lg} ${mainFont}`,
+  mdLight: `${light} ${md} ${mainFont}`,
   mdReg: `${regular} ${md} ${mainFont}`,
   mdBold: `${bold} ${md} ${mainFont}`,
   smReg: `${regular} ${sm} ${mainFont}`,
