@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { storiesOf } from '@storybook/react';
-import Dropdown from '../../components/DropDown'
+import Dropdown from '../../components/Dropdown'
 
 const hourOptions = [
   0, 1, 2
