@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { storiesOf } from '@storybook/react'
 import Select from 'react-select'
 import './dropdown.css'
 
