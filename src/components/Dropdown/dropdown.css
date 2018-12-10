@@ -1,0 +1,40 @@
+.css-10nd86i {
+  font-family: Hind Guntur, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #1A70E0;
+}
+
+.css-vj8t7z {
+  border-top-color:white !important;
+  border-left-color:white !important;
+  border-right-color:white !important;
+  border-bottom: 2px solid #1A70E0 !important;
+  border-radius: 0 !important;
+}
+
+/*drop-down arrow*/
+.css-19bqh2r {
+  color: #1A70E0;
+}
+/*decorative vertical line*/
+.css-d8oujb {
+  display: none;
+}
+
+/*placeholder text*/
+.css-1492t68 {
+  color: #1A70E0 !important;
+  margin: 0 0 0 0 !important;
+  padding-top: 5px;
+}
+
+/*option text */
+.css-15k3avv {
+  font-size: 20px;
+}
+
+/*value text chosen*/
+.css-xp4uvy {
+  color: #1A70E0 !important;
+  font-size: 20px;
+  padding-top: 5px;
+}
