@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-plus-add</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.18181818,6.81818182 L15,6.81818182 L15,8.18181818 L8.18181818,8.18181818 L8.18181818,15 L6.81818182,15 L6.81818182,8.18181818 L3.55271368e-15,8.18181818 L3.55271368e-15,6.81818182 L6.81818182,6.81818182 L6.81818182,0 L8.18181818,0 L8.18181818,6.81818182 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-plus-add">
+            <g id="blue-dodger">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="white" mask="url(#mask-2)" fill="#FFFFFF" stroke="#979797">
+                    <g transform="translate(-63.000000, -63.000000)" id="Rectangle">
+                        <rect x="0.5" y="0.5" width="155" height="155" rx="10"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
