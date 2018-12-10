@@ -1,41 +1,42 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
+
+import IconAddBlue from '../../assets/icon-add-blue-dodger.svg'
+import IconAddWhite from '../../assets/icon-add-white.svg'
 import globalStyles from '../../globalStyles'
 
-const { color, borderSize, borderRadius, typography } = globalStyles();
+const { color, borderRadius, borderSize, typography } = globalStyles();
 const { curve } = borderRadius
-const { none, thin } = borderSize;
-const { black, blueDodger, white } = color;
+const { thin } = borderSize;
+const { blueDodger, white } = color;
 const { smReg } = typography
 
-const styleBtn = {
-  font: smReg,
-  padding: '10px 10px 5px 10px',
-  borderSizing: 'border-boxing',
-  borderRadius: curve,
-}
-
-const ButtonInverted = styled.button`
-  border: ${thin} solid ${blueDodger};
-  color: ${blueDodger};
-  background: ${white};
+const ButtonRectangle = styled.button`
+color: ${props => props.inverted ? blueDodger : white };
+background: ${props => props.inverted ? white : blueDodger };
+font: ${smReg};
+padding: 10px 10px 5px 10px;
+border-sizing: border-boxing;
+border: ${thin} solid ${ blueDodger };
+border-radius: ${curve};
+display: flex;
+margin: 10px;
 `
 
-const ButtonNormal = styled.button`
-  border: ${none} solid ${black};
-  color: ${white};
-  background: ${blueDodger};
-`
-
-const Button = ({ children = 'Add Button Text', optionsUsed = false }) => {
+const Button = ({ children = 'Add Button Text', iconPresent=false, inverted = false }) => {
   return (
-    <Fragment>
+    <ButtonRectangle inverted={inverted}>
       {
-        optionsUsed
-          ? <ButtonInverted style={styleBtn}>{children}</ButtonInverted>
-          : <ButtonNormal style={styleBtn}>{children}</ButtonNormal>
+        iconPresent &&
+        <img
+          style={{ margin: '2.5px 10px 0px 0px' }}
+          wrapper="div"
+          src={ inverted ? IconAddBlue : IconAddWhite }
+        />
       }
-    </Fragment>
+      {children}
+    </ButtonRectangle>
   )
 }
 
