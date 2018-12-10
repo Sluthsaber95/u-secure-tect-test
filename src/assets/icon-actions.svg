@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="16px" viewBox="0 0 4 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Board" transform="translate(-1015.000000, -905.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="3000" height="3000"></rect>
+            <g id="Table-Layout" transform="translate(46.000000, 805.000000)">
+                <g id="Table-row" transform="translate(0.000000, 89.000000)">
+                    <rect id="Rectangle" fill="#F9F9F9" x="0" y="0" width="991" height="37"></rect>
+                    <g id="icon-menu" transform="translate(969.000000, 11.000000)" fill="#1A70E0" fill-rule="nonzero">
+                        <path d="M2,12 C3.10466667,12 4,12.8953333 4,14 C4,15.1046667 3.10466667,16 2,16 C0.895333333,16 0,15.1046667 0,14 C0,12.8953333 0.895333333,12 2,12 Z M2,6 C3.10466667,6 4,6.89533333 4,8 C4,9.10466667 3.10466667,10 2,10 C0.895333333,10 0,9.10466667 0,8 C0,6.89533333 0.895333333,6 2,6 Z M2,0 C3.10466667,0 4,0.895333333 4,2 C4,3.10466667 3.10466667,4 2,4 C0.895333333,4 0,3.10466667 0,2 C0,0.895333333 0.895333333,0 2,0 Z" id="Shape"></path>
+                    </g>
+                    <g id="table-label" transform="translate(648.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="333" height="36"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
