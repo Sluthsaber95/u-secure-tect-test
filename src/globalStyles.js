@@ -19,9 +19,13 @@ const color = {
   whiteSnow: '#F9F9F9',
 }
 
+const fontBackup = {
+  helvetica: ', Helvetica Neue, Helvetica, Arial, sans-serif'
+}
+
 const fonts = {
   fontFamily: {
-    hindGuntur: `Hind Guntur, Helvetica Neue, Helvetica, Arial, sans-serif`
+    hindGuntur: `Hind Guntur`
   },
   fontWeight: {
     light: 300,
@@ -40,14 +44,15 @@ const { fontFamily, fontSize, fontWeight } = fonts;
 const { hindGuntur } = fontFamily
 const { sm, md, lg, xl } = fontSize;
 const { regular, bold } = fontWeight
+const mainFont = `${hindGuntur}${fontBackup.helvetica}`
 
 const typography = {
-  xlReg: `${xl} ${regular} ${hindGuntur}`,
-  lgBold: `${lg} ${bold} ${hindGuntur}`,
-  lgReg: `${lg} ${regular} ${hindGuntur}`,
-  mdReg: `${md} ${regular} ${hindGuntur}`,
-  mdBold: `${md} ${bold} ${hindGuntur}`,
-  smReg: `${sm} ${regular} ${hindGuntur}`,
+  xlReg: `${regular} ${xl} ${mainFont}`,
+  lgBold: `${bold} ${lg} ${mainFont}`,
+  lgReg: `${regular} ${lg} ${mainFont}`,
+  mdReg: `${regular} ${md} ${mainFont}`,
+  mdBold: `${bold} ${md} ${mainFont}`,
+  smReg: `${regular} ${sm} ${mainFont}`,
 }
 
 
