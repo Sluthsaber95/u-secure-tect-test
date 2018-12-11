@@ -56,13 +56,17 @@ class Table extends Component {
   }
 
   addUser = () => {
-    this.setState({userData: [...this.state.userData, 
-      {
-        id: 4,
-        username: 'BIgheaD',
-        email: 'nelson-bighetti@hooli.com'
+    this.setState(state => {
+      return {
+        userData: [...state.userData,
+          {
+            id: 4,
+            username: 'BIgheaD',
+            email: 'nelson-bighetti@hooli.com'
+          }
+        ]
       }
-    ]})
+    })
   }
 
   render(){
