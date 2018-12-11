@@ -21,12 +21,11 @@ border-sizing: border-boxing;
 border: ${thin} solid ${ blueDodger };
 border-radius: ${curve};
 display: flex;
-margin: 10px;
 `
 
-const Button = ({ children = 'Add Button Text', iconPresent=false, inverted = false }) => {
+const Button = ({ children = 'Add Button Text', iconPresent=false, inverted = false, onClick }) => {
   return (
-    <ButtonRectangle inverted={inverted}>
+    <ButtonRectangle onClick={onClick} inverted={inverted}>
       {
         iconPresent &&
         <img
