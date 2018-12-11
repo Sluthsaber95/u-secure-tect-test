@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/core'
 
+import Modal from '../Modal'
 import TableHeaders from './TableHeaders'
 import TableDataRows from './TableDataRows'
 
@@ -19,65 +20,71 @@ const styleTableRows = css`
 
 const columns = [
   {
-    name: 'Id'
-  },
-  {
     name: 'Usernames'
   },
   {
     name: 'email'
   },
   {
-    name: '',
-    addIcon: true
+    name: ''
   },
 ]
 
 class Table extends Component {
   state = {
+    modalOpen: false,
     newUserAdded: false,
     userData: [
       {
-        id: 1,
         username: 'Jared',
         email: 'charles-dunn@hooli.com'
       },
       {
-        id: 2,
         username: 'da_carver',
         email: 'kevin_cloudservice@disroot.com'
       },
       {
-        id: 3,
         username: 'RDogHendricks',
         email: 'richard-hendricks@piedpiper.com'
       }
     ]
   }
 
-  addUser = () => {
+  addUser = (newUserDetails) => {
     this.setState(state => {
+      this.handleClose()
       return {
         userData: [...state.userData,
-          {
-            id: 4,
-            username: 'BIgheaD',
-            email: 'nelson-bighetti@hooli.com'
-          }
+          newUserDetails
         ]
       }
     })
   }
 
+  handleOpen = () => {
+    document.body.style.overflow = "hidden"
+    this.setState({ modalOpen: true })
+  }
+
+  handleClose = () => {
+    document.body.style.overflow = "scroll"
+    this.setState({ modalOpen: false })
+  }
+
   render(){
-    const { userData } = this.state
+    const { modalOpen, userData } = this.state
     return (
       <Fragment>
         <Global styles={styleTableRows} />
+        <Modal 
+          addUser={this.addUser}
+          modalOpen={modalOpen}
+          handleOpen={this.handleOpen}
+        />
         <TableWrapper>
           <TableHeaders columnHeaders={columns} addUser={this.addUser}/>
           <TableDataRows userData={userData}/>
-        </TableWrapper>
+        </TableWrapper>        
       </Fragment>
     )
   }
