@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 
 import IconAddBlue from '../../assets/icon-add-blue-dodger.svg'
 import IconAddWhite from '../../assets/icon-add-white.svg'
@@ -21,6 +20,7 @@ border-sizing: border-boxing;
 border: ${thin} solid ${ blueDodger };
 border-radius: ${curve};
 display: flex;
+letter-spacing: 1.5px;
 `
 
 const Button = ({ children = 'Add Button Text', iconPresent=false, inverted = false, onClick }) => {
