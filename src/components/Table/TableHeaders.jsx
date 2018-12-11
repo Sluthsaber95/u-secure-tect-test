@@ -2,7 +2,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 import globalStyles from '../../globalStyles'
-import Button from '../../components/Button'
 
 const { typography } = globalStyles()
 const { mdBold } = typography
@@ -26,19 +25,13 @@ const ButtonWrapper = styled.div`
 `
 
 const Heading = styled.p`
-  margin: 0px 0 -12px 0;
+  margin: 0px;
 `
 
-const TableHeaders = ({ columnHeaders, addUser }) => (
+const TableHeaders = ({ columnHeaders }) => (
   <tr>
-    {columnHeaders.map(({ name, addIcon }) => (
+    {columnHeaders.map(({ name }) => (
       <TableHeaderWrapper>
-        {
-          addIcon &&
-          <ButtonWrapper style={{ marginBottom: 15 }}>
-            <Button onClick={addUser} iconPresent={true}>Add User</Button>
-          </ButtonWrapper>
-        }
         <Heading>{name}</Heading>
       </TableHeaderWrapper>
     ))}
