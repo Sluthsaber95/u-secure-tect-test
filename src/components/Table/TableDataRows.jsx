@@ -4,9 +4,8 @@ import TableRow from './TableRow'
 const TableDataRows = ({ userData }) => (
   <Fragment>
     {
-      userData.map(({ email, id, username }) => (
+      userData.map(({ email, username }) => (
         <TableRow
-          id={id}
           username={username}
           email={email}
         />
