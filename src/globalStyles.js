@@ -1,7 +1,8 @@
 const borders = {
   borderSize: {
     none: '0px',
-    thin: '1px'
+    thin: '1px',
+    medium: '2px'
   },
   borderRadius: {
     curve: '5px'
