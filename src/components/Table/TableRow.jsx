@@ -31,9 +31,8 @@ const IconActions = styled.img`
   padding-right: 15px;
 `
 
-const TableRow = ({ email, id, username}) => (
+const TableRow = ({ email, username}) => (
   <tr>
-    <TableData>{id}</TableData>
     <TableData containLink={true}>{username}</TableData>
     <TableData containLink={true}>{email}</TableData>
     <TableActions>
