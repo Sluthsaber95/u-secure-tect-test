@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 
-import Button from '../Button'
+import { ButtonRectangle } from '../Buttons'
 import globalStyles from '../../globalStyles'
 const { borderRadius, borderSize, color, typography } = globalStyles()
 const { curve } = borderRadius
@@ -42,7 +41,7 @@ const InputWrapper = styled.article`
   margin: 0 0 25px 0;
 `
 
-const ButtonWrapper = styled.div`
+const ButtonRectangleWrapper = styled.div`
   margin: 15px 0 0 0;
   letter-spacing: 1px;
 `
@@ -82,11 +81,11 @@ class Form extends React.Component {
           {
             this.props.children
           }
-          <ButtonWrapper>
-            <Button type="submit" value="Submit">
+          <ButtonRectangleWrapper>
+            <ButtonRectangle type="submit" value="Submit">
               Submit
-            </Button>
-          </ButtonWrapper>
+            </ButtonRectangle>
+          </ButtonRectangleWrapper>
         </form>
       </FormWrapper>
     );
