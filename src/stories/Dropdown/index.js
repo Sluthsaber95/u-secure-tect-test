@@ -4,7 +4,9 @@ import { storiesOf } from '@storybook/react';
 import Dropdown from '../../components/Dropdown'
 
 const hourOptions = [
-  0, 1, 2
+  { value: 0, label: 0 },
+  { value: 0, label: 0 },
+  { value: 0, label: 0 },
 ]
 
 const daysOfWeekOptions = [
