@@ -25,10 +25,15 @@ const Buttons = () => storiesOf('Buttons', module)
         })
       }
       render(){
+        const styleBtn = {
+          display: 'flex',
+          justifyContent: 'center',
+          width: 50,
+        }
         const { btnToggledTrue } = this.state
         return (
           <ButtonToggle
-            constantWidth={50}
+            styleBtn={styleBtn}
             startTrue={btnToggledTrue} 
             onClick={this.handleToggle}
             valueTrue="Yes" 
