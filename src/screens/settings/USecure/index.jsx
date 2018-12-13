@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Reminders from './Reminders'
 import Subscriptions from './Subscriptions'
+import Summaries from './Summaries'
 
 
 class SettingsUSecure extends Component {
@@ -29,7 +30,10 @@ class SettingsUSecure extends Component {
   }
 
   render(){
-    const { remindersEnabled, subscriptionsEnabled } = this.state
+    const {
+      remindersEnabled,
+      subscriptionsEnabled,
+    } = this.state
     return (
       <section>
         <Subscriptions
@@ -40,6 +44,7 @@ class SettingsUSecure extends Component {
           handleToggle={this.handleToggleReminder}
           disableComponent={remindersEnabled}
         />
+        <Summaries />
       </section>
     )
   }
