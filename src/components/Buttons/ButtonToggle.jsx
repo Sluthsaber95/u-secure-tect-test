@@ -3,17 +3,12 @@ import React, { Fragment } from 'react'
 import { ButtonCommon } from './ButtonCommon'
 
 const ButtonToggle = ({
-  constantWidth=100,
+  styleBtn,
   startTrue = true,
   onClick,
   valueTrue="On",
   valueFalse="Off"
 }) => {
-  const styleBtn = { 
-    display: 'flex',
-    justifyContent: 'center',
-    width: constantWidth || "auto",
-  }
   const valueChosen = startTrue ? valueTrue : valueFalse
   return (
     <Fragment>
@@ -25,7 +20,6 @@ const ButtonToggle = ({
             >{ valueChosen }</ButtonCommon>
           : <ButtonCommon
               style={styleBtn}
-              constantWidth={constantWidth}
               onClick={onClick}
               inverted={true}
             >{ valueChosen }</ButtonCommon>
