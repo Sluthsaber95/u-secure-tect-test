@@ -1,18 +1,35 @@
-import React, { Fragment } from 'react'
+import React, { Component } from 'react'
 import Select from 'react-select'
 import './dropdown.css'
 
-const Dropdown = ({ numerical = false, options, placeholder }) => {
-  const optionsPassed = options.map(hour => { return { value: hour, label: hour } })
-  return (
-    <Fragment>
-      {
-        numerical 
-          ? <Select options={optionsPassed} placeholder={placeholder} />
-          : <Select options={options} placeholder={placeholder} />
+class Dropdown extends Component {
+  state = {
+    selectedOption: null,
+  }
+
+  handleChange = (selectedOption) => {
+    this.setState(() => {
+      return { 
+        selectedOption, 
+        placeholder: selectedOption
       }
-    </Fragment>
-  )
+    })
+  }
+
+  render() {
+    const { selectedOption } = this.state
+    const { isDisabled=false, options, placeholder } = this.props
+    return (
+      <Select
+        isDisabled={isDisabled}
+        isSearchable={false}
+        value={selectedOption}
+        onChange={this.handleChange}
+        options={options}
+        placeholder={placeholder}
+      />
+    )
+  }
 }
 
 export default Dropdown
