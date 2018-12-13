@@ -9,6 +9,7 @@ const { blueDodger, white } = color;
 const { smReg } = typography
 
 export const ButtonCommon = styled.button`
+height: 45px;
 color: ${props => props.inverted ? blueDodger : white};
 text-align: center;
 background: ${props => props.inverted ? white : blueDodger};
