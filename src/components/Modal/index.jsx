@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from '@emotion/styled'
 
 import Form from '../Form'
-import Button from '../Button'
+import { ButtonRectangle } from '../Buttons'
 
 const ModalBackground = styled.div`
   position: absolute;
@@ -34,7 +34,7 @@ class Model extends Component {
             <Form addUser={addUser} modalClose={this.handleClose} />
           </ModalBackground>
         }
-        <Button iconPresent={true} onClick={this.props.handleOpen}>Add User</Button>
+        <ButtonRectangle iconPresent={true} onClick={this.props.handleOpen}>Add User</ButtonRectangle>
       </section>
     )
   }
