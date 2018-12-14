@@ -4,6 +4,7 @@ import StoriesDropDown from './Dropdown'
 import StoriesForm from './Form'
 import StoriesInput from './Input'
 import StoriesModel from './Modal'
+import StoriesNavMenu from './NavMenu'
 import StoriesTable from './Table'
 
 Buttons()
@@ -12,4 +13,5 @@ StoriesDropDown()
 StoriesForm()
 StoriesInput()
 StoriesModel()
+StoriesNavMenu()
 StoriesTable()
