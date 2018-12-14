@@ -61,6 +61,18 @@ class Table extends Component {
     })
   }
 
+  removeUser = (index) => {
+    this.setState(state => {
+      this.handleClose()
+      return {
+        userData: [
+          ...state.userData.slice(0, index),
+          ...state.userData.slice(index + 1)
+        ]
+      }
+    })
+  }
+
   handleOpen = () => {
     document.body.style.overflow = "hidden"
     this.setState({ modalOpen: true })
@@ -82,8 +94,11 @@ class Table extends Component {
           handleOpen={this.handleOpen}
         />
         <TableWrapper>
-          <TableHeaders columnHeaders={columns} addUser={this.addUser}/>
-          <TableDataRows userData={userData}/>
+          <TableHeaders columnHeaders={columns} addUser={this.addUser} />
+          <TableDataRows 
+            removeUser={this.removeUser}
+            userData={userData} 
+          />
         </TableWrapper>        
       </Fragment>
     )
