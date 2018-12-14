@@ -3,12 +3,24 @@
   color: #1A70E0;
 }
 
-.css-vj8t7z {
-  border-top-color:white !important;
-  border-left-color:white !important;
-  border-right-color:white !important;
+.css-162g8z5 {
+  font-family: Hind Guntur, Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 0px 0px;
+  border-top: 0px solid transparent !important;
+  border-left: 0px solid transparent !important;
+  border-right: 0px solid transparent !important;
   border-bottom: 2px solid #1A70E0 !important;
   border-radius: 0 !important;
+}
+
+.css-vj8t7z {
+  border-top: 0px solid transparent !important;
+  border-left: 0px solid transparent !important;
+  border-right: 0px solid transparent !important;
+  border-bottom: 2px solid #1A70E0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  height: 35px;
 }
 
 /*drop-down arrow*/
@@ -24,7 +36,8 @@
 .css-1492t68 {
   color: #1A70E0 !important;
   margin: 0 0 0 0 !important;
-  padding-top: 5px;
+  padding: 5px;
+  font-size: 20px;
 }
 
 /*option text */

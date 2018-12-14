@@ -13,6 +13,7 @@ const ButtonRectangle = ({ children = 'Add Button Text', iconPresent = false, in
         style={{ margin: '2.5px 10px 0px 0px' }}
         wrapper="div"
         src={inverted ? IconAddBlue : IconAddWhite}
+        alt="Add User Icon"
       />
     }
     {children}
