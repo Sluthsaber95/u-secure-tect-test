@@ -28,7 +28,6 @@ class SettingsUSecure extends Component {
       }
     });
   }
-
   render(){
     const {
       remindersEnabled,
