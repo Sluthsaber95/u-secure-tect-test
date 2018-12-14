@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import styled from '@emotion/styled'
@@ -27,22 +27,18 @@ const Title = styled.h1`
   letter-spacing: 1px;
 `
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <AppWrapper>
-          <Title>Settings</Title>
-          <NavMenu />
-          <Switch>
-            <Route exact path="/settings/u-secure" render={props => <SettingUSecure title="Settings" />} />
-            <Route path="/settings/security" render={props => <SettingSecurity title="Settings" />} />
-            <Route path="/settings/users" render={props => <SettingUsers title="Settings" />} />
-          </Switch>
-        </AppWrapper>
-      </Router>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <AppWrapper>
+      <Title>Settings</Title>
+      <NavMenu />
+      <Switch>
+        <Route exact path="/settings/u-secure" render={props => <SettingUSecure title="Settings" />} />
+        <Route path="/settings/security" render={props => <SettingSecurity title="Settings" />} />
+        <Route path="/settings/users" render={props => <SettingUsers title="Settings" />} />
+      </Switch>
+    </AppWrapper>
+  </Router>
+)
 
 export default App;
